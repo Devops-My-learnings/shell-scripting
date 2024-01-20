@@ -24,7 +24,7 @@ startEc2Instances() {
   echo "Starting aws ec2 instance..."
   aws ec2 start-instances --instance-ids $AWS_INSTANCE_ID 
   echo "Fetching aws ec2 instance Ip. Please wait..."
-  sleep 20s
+  sleep 30s
   getIpAddress
 }
 
